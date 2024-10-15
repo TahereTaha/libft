@@ -6,14 +6,14 @@
 #    By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/07 07:58:21 by tatahere          #+#    #+#              #
-#    Updated: 2024/07/01 08:52:44 by tatahere         ###   ########.fr        #
+#    Updated: 2024/10/15 08:45:52 by tatahere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 AR	= ar rc
 RF	= rm -rf
 CC	= cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I.
 
 NAME	= libft.a
 HEADER	= libft.h
@@ -69,6 +69,8 @@ BOBJ	= ${BSRC:.c=.o}
 BDEP	= ${BSRC:.c=.d}
 
 MAKEFLAGS = --no-print-directory
+
+VPATH	=	array:is_tipe:lists:memory:string:write
 
 # build the library
 all: $(NAME) Makefile
