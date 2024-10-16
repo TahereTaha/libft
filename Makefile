@@ -6,14 +6,14 @@
 #    By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/07 07:58:21 by tatahere          #+#    #+#              #
-#    Updated: 2024/10/16 06:46:06 by tatahere         ###   ########.fr        #
+#    Updated: 2024/10/16 08:54:51 by tatahere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 AR	= ar rc
 RF	= rm -rf
 CC	= cc
 
-CFLAGS = -Wall -Wextra -Werror -I.
+CFLAGS = -Wall -Wextra -Werror -I. -g 
 
 NAME	= libft.a
 HEADER	= libft.h
