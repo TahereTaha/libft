@@ -6,7 +6,7 @@
 #    By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/07 07:58:21 by tatahere          #+#    #+#              #
-#    Updated: 2024/10/15 08:45:52 by tatahere         ###   ########.fr        #
+#    Updated: 2024/10/16 06:46:06 by tatahere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 AR	= ar rc
@@ -51,6 +51,7 @@ SRC		=	ft_isalnum.c		\
 			ft_putstr_fd.c		\
 			ft_putendl_fd.c		\
 			ft_putnbr_fd.c		\
+			ft_exit.c			\
 
 OBJ		= ${SRC:.c=.o}
 DEP		= ${SRC:.c=.d}
@@ -70,7 +71,7 @@ BDEP	= ${BSRC:.c=.d}
 
 MAKEFLAGS = --no-print-directory
 
-VPATH	=	array:is_tipe:lists:memory:string:write
+VPATH	=	array:is_tipe:lists:memory:string:write:utils
 
 # build the library
 all: $(NAME) Makefile
