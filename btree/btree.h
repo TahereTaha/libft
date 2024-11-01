@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_exit.c                                          :+:      :+:    :+:   */
+/*   btree.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 06:38:16 by tatahere          #+#    #+#             */
-/*   Updated: 2024/10/16 06:46:38 by tatahere         ###   ########.fr       */
+/*   Created: 2024/10/18 06:21:41 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/01 14:15:43 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdlib.h>
+#ifndef BTREE_H
+# define BTREE_H
 
-void	ft_exit(int exit_status, char *str)
+typedef struct s_btree
 {
-	if (exit_status)
-	{
-		ft_putstr_fd(str, 2);
-		exit(exit_status);
-	}
-	ft_putstr_fd(str, 1);
-	exit(exit_status);
-}
+	void			*content;
+	struct s_btree	*left;
+	struct s_btree	*rigth;
+}	t_btree;
 
+t_btree	*ft_btreenew(void *content);
+void	ft_btreedelone(t_btree *node, void (*del)(void *));
+void	ft_btreeclear(t_btree *node, void (*del)(void *));
 
-
+#endif

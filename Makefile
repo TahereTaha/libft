@@ -6,7 +6,7 @@
 #    By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/07 07:58:21 by tatahere          #+#    #+#              #
-#    Updated: 2024/10/16 08:54:51 by tatahere         ###   ########.fr        #
+#    Updated: 2024/11/01 14:17:30 by tatahere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 AR	= ar rc
@@ -51,7 +51,9 @@ SRC		=	ft_isalnum.c		\
 			ft_putstr_fd.c		\
 			ft_putendl_fd.c		\
 			ft_putnbr_fd.c		\
-			ft_exit.c			\
+			ft_btreeclear.c		\
+			ft_btreedelone.c	\
+			ft_btreenew.c		\
 
 OBJ		= ${SRC:.c=.o}
 DEP		= ${SRC:.c=.d}
@@ -71,7 +73,7 @@ BDEP	= ${BSRC:.c=.d}
 
 MAKEFLAGS = --no-print-directory
 
-VPATH	=	array:is_tipe:lists:memory:string:write:utils
+VPATH	=	array:is_tipe:lists:memory:string:write:utils:btree
 
 # build the library
 all: $(NAME) Makefile
@@ -93,7 +95,6 @@ fclean: clean
 	$(RF) $(NAME)
 
 re: fclean all
-
 
 .PHONY: all clean fclean re test bonus
 

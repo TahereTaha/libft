@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_btreeclear.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 07:49:18 by tatahere          #+#    #+#             */
-/*   Updated: 2024/10/29 07:43:22 by tatahere         ###   ########.fr       */
+/*   Created: 2024/10/30 14:45:47 by tatahere          #+#    #+#             */
+/*   Updated: 2024/10/30 14:45:53 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
-{
-	int	i;
+#include <stdlib.h>
+#include <stdio.h>
 
-	i = 0;
-	while (s[i])
+#include "btree.h"
+
+void	ft_btreeclear(t_btree *node, void (*del)(void *))
+{
+	if (!node || !del)
+		return ;
+	if (!node->left && !node->rigth)
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
-		i++;
+		ft_btreedelone(node, del);
+		return ;
 	}
-	if (s[i] == (char)c)
-		return ((char *)&s[i]);
-	return (0);
+	ft_btreeclear(node->left, del);
+	ft_btreeclear(node->rigth, del);
 }

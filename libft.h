@@ -6,19 +6,27 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 10:43:31 by tatahere          #+#    #+#             */
-/*   Updated: 2024/10/16 06:44:58 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:16:08 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <aio.h>
+# include "btree/btree.h"
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+typedef	struct	s_tree
+{
+	void	*content;
+	t_list	*child;
+}	t_tree;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
