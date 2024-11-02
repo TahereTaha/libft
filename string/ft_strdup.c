@@ -6,11 +6,13 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:31:33 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/18 15:20:42 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:40:27 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 #include <stdlib.h>
+
+#include "ft_string.h"
 
 char	*ft_strdup(const char *str)
 {

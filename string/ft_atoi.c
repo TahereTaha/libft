@@ -6,18 +6,14 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:11:16 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/01 06:35:12 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:46:27 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-static int	ft_isspace(int c)
-{
-	if (c == '\v' || c == '\f' || c == '\n' || \
-		c == '\r' || c == '\t' || c == ' ')
-		return (1);
-	return (0);
-}
+#include <aio.h>
+
+#include "ft_string.h"
+#include "is_tipe/ft_istipe.h"
 
 int	ft_atoi(const char *str)
 {
@@ -45,13 +41,3 @@ int	ft_atoi(const char *str)
 	}
 	return (nbr * sign);
 }
-/*
-#include <stdio.h>
-
-int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%i\n", ft_atoi(av[1]));
-}
-*/

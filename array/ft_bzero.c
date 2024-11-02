@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 13:13:36 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/19 08:41:09 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:45:10 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "ft_array.h"
 #include <aio.h>
 
 void	ft_bzero(void *s, size_t n)

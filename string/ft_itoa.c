@@ -6,10 +6,13 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 08:19:14 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/01 07:10:46 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:42:14 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
+
+#include "ft_string.h"
 
 static int	ft_intlen(int n)
 {
@@ -58,15 +61,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-/*
-#include <stdio.h>
-#include "libft.h"
-
-int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%s\n", ft_itoa(ft_atoi(av[1])));
-}
-
-*/

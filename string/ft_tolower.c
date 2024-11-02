@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 07:35:58 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/18 15:02:22 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:04:54 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "ft_string.h"
 
 int	ft_tolower(int c)
 {

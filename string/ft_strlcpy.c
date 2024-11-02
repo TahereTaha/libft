@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 05:38:41 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/18 15:18:38 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:00:27 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "ft_string.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

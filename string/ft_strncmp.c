@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 08:06:06 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/26 13:08:16 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:02:04 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <aio.h>
+
+#include "ft_string.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

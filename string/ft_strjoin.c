@@ -6,11 +6,13 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 12:24:19 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/05 08:05:39 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:40:47 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 #include <stdlib.h>
+
+#include "ft_string.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -29,18 +31,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(str, s2, s1_len + s2_len + 1);
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int	main(int ac, char **av)
-{
-	char	*str;
-
-	if (ac != 3)
-		return (printf("please provide only 2 strings, no more no les\n"));
-	str = ft_strjoin(av[1], av[2]);
-	if (!str)
-		return (printf("the malloc in strjoin failed\n"));
-	printf("the string is\n>>%s<<\n", str);
-}
-*/

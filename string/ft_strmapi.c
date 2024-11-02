@@ -6,11 +6,13 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 09:47:35 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/05 08:09:27 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:01:28 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 #include <stdlib.h>
+
+#include "ft_string.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

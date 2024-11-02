@@ -6,11 +6,13 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 12:09:58 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/05 07:31:25 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:04:16 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 #include <stdlib.h>
+
+#include "ft_string.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -35,13 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int main(int ac, char **av)
-{
-	if (ac != 4)
-		return (1);
-	printf("%s\n%s\n", av[1], ft_substr(av[1], ft_atoi(av[2]), ft_atoi(av[3])));
-}
-*/

@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 06:05:30 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/01 08:35:55 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:59:51 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "ft_string.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

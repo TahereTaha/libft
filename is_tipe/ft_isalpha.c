@@ -6,9 +6,12 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 10:52:50 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/17 05:37:48 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:59:43 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_istipe.h"
+
 int	ft_isalpha(int c)
 {
 	unsigned char	character;

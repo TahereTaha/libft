@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 08:39:15 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/24 06:51:09 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:02:32 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <aio.h>
+
+#include "ft_string.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

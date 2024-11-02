@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_btree.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 10:46:13 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:27:55 by tatahere         ###   ########.fr       */
+/*   Created: 2024/10/18 06:21:41 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/02 16:15:25 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_BTREE_H
+# define FT_BTREE_H
 
-#include "ft_write.h"
-
-void	ft_putchar_fd(char c, int fd)
+typedef struct s_btree
 {
-	write(fd, &c, 1);
-}
+	void			*content;
+	struct s_btree	*left;
+	struct s_btree	*rigth;
+}	t_btree;
+
+t_btree	*ft_btreenew(void *content);
+void	ft_btreedelone(t_btree *node, void (*del)(void *));
+void	ft_btreeclear(t_btree *node, void (*del)(void *));
+
+#endif

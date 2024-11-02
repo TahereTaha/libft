@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:33:49 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/17 07:45:07 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:00:56 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <aio.h>
+
+#include "ft_string.h"
 
 size_t	ft_strlen(const char *str)
 {

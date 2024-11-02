@@ -6,10 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 11:35:58 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/05 12:03:52 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:25:43 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "ft_lists.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

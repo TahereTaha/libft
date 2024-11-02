@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_memory.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 10:46:13 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:27:55 by tatahere         ###   ########.fr       */
+/*   Created: 2024/11/02 16:36:31 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/02 16:39:49 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_MEMORY_H
+# define FT_MEMORY_H
 
-#include "ft_write.h"
+# include <aio.h>
 
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
+void	*ft_calloc(size_t nmemb, size_t size);
+
+#endif
+

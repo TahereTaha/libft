@@ -6,9 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:30:19 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/17 05:45:15 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:13:10 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_istipe.h"
 
 int	ft_isprint(int c)
 {

@@ -6,10 +6,12 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 13:23:13 by tatahere          #+#    #+#             */
-/*   Updated: 2024/06/17 09:00:48 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:52:38 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <aio.h>
+#include "ft_array.h"
 
 void	*ft_memcpy(void *dest, void *src, size_t n)
 {

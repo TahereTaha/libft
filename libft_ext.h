@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   libft_ext.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 10:46:13 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:27:55 by tatahere         ###   ########.fr       */
+/*   Created: 2024/11/02 17:30:37 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/02 17:32:28 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef LIBFT_EXT_H
+# ifndef LIBFT_EXT_H
 
-#include "ft_write.h"
+# include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
+# include "btree/ft_btree.h"
+# include "lists/ft_lists.h"
+
+#endif

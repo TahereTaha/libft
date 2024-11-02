@@ -6,11 +6,13 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:55:38 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/05 08:08:03 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:55:12 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 #include <stdlib.h>
+
+#include "ft_string.h"
 
 static int	ft_separation_amount(const char *str, char c)
 {
