@@ -6,12 +6,11 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 14:45:47 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:42:34 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/13 13:30:33 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 #include "ft_btree.h"
 

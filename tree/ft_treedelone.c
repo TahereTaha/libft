@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_ext.h                                        :+:      :+:    :+:   */
+/*   ft_treedelone.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 17:30:37 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:32:28 by tatahere         ###   ########.fr       */
+/*   Created: 2024/10/30 15:22:29 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/13 14:41:56 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_EXT_H
-# ifndef LIBFT_EXT_H
+#include <stdlib.h>
 
-# include "libft.h"
+#include "ft_tree.h"
 
-# include "btree/ft_btree.h"
-# include "lists/ft_lists.h"
-
-#endif
+void	ft_treedelone(t_tree *node, void (*del)(void *))
+{
+	if (!node || !del)
+		return ;
+	del(node->content);
+	free(node);
+}

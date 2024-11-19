@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memory.h                                        :+:      :+:    :+:   */
+/*   ft_treenew.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 16:36:31 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:39:49 by tatahere         ###   ########.fr       */
+/*   Created: 2024/10/30 15:25:01 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/13 15:05:41 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_MEMORY_H
-# define FT_MEMORY_H
+#include <stdlib.h>
 
-# include <aio.h>
+#include "ft_memory.h"
+#include "ft_tree.h"
 
-void	*ft_calloc(size_t nmemb, size_t size);
+t_tree	*ft_treenew(void *content)
+{
+	t_tree	*node;
 
-#endif
-
+	node = ft_calloc(1, sizeof(t_tree));
+	if (!node)
+		return (NULL);
+	node->content = content;
+	return (node);
+}

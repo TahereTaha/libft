@@ -1,40 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 11:35:58 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:29:18 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/13 13:29:23 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_lists.h"
+#include "ft_list.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*new_list;
-	t_list	*curent_node;
+	t_list	*curent;
 
-	if (!lst || !f || !del)
-		return (0);
-	new_list = ft_lstnew(lst->content);
-	if (!new_list)
-		return (0);
-	curent_node = new_list;
-	while (lst->next)
+	if (!lst || !f)
+		return ;
+	curent = lst;
+	while (curent)
 	{
-		curent_node->content = (*f)(lst->content);
-		curent_node->next = ft_lstnew(lst->content);
-		if (!curent_node->next)
-		{
-			ft_lstclear(&new_list, del);
-			return (0);
-		}
-		lst = lst->next;
-		curent_node = curent_node->next;
+		(*f)(curent->content);
+		curent = curent->next;
 	}
-	curent_node->content = (*f)(lst->content);
-	return (new_list);
 }

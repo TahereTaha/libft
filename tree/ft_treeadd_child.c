@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_treeadd_child.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/14 11:35:58 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:27:14 by tatahere         ###   ########.fr       */
+/*   Created: 2024/11/13 14:47:13 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/13 14:50:02 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_lists.h"
+#include "ft_tree.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_treeadd_child(t_tree *parent, t_tree *child)
 {
-	t_list	*curent;
-
-	if (!lst || !f)
+	if (!parent || !child)
 		return ;
-	curent = lst;
-	while (curent)
-	{
-		(*f)(curent->content);
-		curent = curent->next;
-	}
+	if (parent->child)
+		parent->child->brother = child;
+	else
+		parent->child = child;
 }

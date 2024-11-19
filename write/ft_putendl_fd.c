@@ -6,14 +6,14 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 10:51:17 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:29:44 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:04:24 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 #include "ft_write.h"
-#include "string/ft_string.h"
+#include "ft_string.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

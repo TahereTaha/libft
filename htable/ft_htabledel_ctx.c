@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_htabledel_ctx.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/14 11:35:58 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:33:58 by tatahere         ###   ########.fr       */
+/*   Created: 2024/11/18 17:34:01 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/19 15:45:23 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_lists.h"
+#include <stdlib.h>
 
-int	ft_lstsize(t_list *lst)
+#include "libft.h"
+#include "ft_htable.h"
+
+//	static void	del_elements
+
+static void	delete_element(t_key_data *elem)
 {
-	int		size;
-	t_list	*curent_node;
+	free(elem->key);
+	free(elem->data);
+	free(elem);
+}
 
-	if (!lst)
-		return (0);
-	size = 1;
-	curent_node = lst;
-	while (curent_node->next)
+void	ft_htabledel_ctx(t_htable_ctx *htable)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < htable->size)
 	{
-		curent_node = curent_node->next;
-		size++;
+		ft_lstclear(&htable->table[i], (t_del) delete_element);
+		i++;
 	}
-	return (size);
+	free(htable->table);
+	free(htable);
 }

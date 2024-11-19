@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:22:29 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 17:42:51 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/13 13:33:11 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "ft_btree.h"
 
-void	ft_btreedelone(t_btree *node, void	(*del)(void *))
+void	ft_btreedelone(t_btree *node, void (*del)(void *))
 {
 	if (!node || !del)
 		return ;

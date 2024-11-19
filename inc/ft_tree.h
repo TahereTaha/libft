@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_tree.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 10:48:17 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/13 14:04:10 by tatahere         ###   ########.fr       */
+/*   Created: 2024/10/18 06:21:41 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/13 15:06:10 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_TREE_H
+# define FT_TREE_H
 
-#include "ft_write.h"
-#include "ft_string.h"
-
-void	ft_putstr_fd(char *s, int fd)
+typedef struct s_tree
 {
-	if (!s)
-		return ;
-	write(fd, s, ft_strlen(s));
-}
+	void			*content;
+	struct s_tree	*brother;
+	struct s_tree	*child;
+}	t_tree;
+
+t_tree	*ft_treenew(void *content);
+void	ft_treedelone(t_tree *node, void (*del)(void *));
+void	ft_treeclear(t_tree *node, void (*del)(void *));
+void	ft_treeadd_child(t_tree *parent, t_tree *child);
+
+#endif

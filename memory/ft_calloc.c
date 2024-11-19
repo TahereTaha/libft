@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:36:09 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:40:17 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:03:30 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 #include "ft_memory.h"
-#include "array/ft_array.h"
+#include "ft_array.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

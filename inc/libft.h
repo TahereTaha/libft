@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 10:48:17 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/13 14:04:10 by tatahere         ###   ########.fr       */
+/*   Created: 2024/06/08 10:43:31 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/19 15:45:54 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef LIBFT_H
+# define LIBFT_H
 
-#include "ft_write.h"
-#include "ft_string.h"
+typedef void (*t_del)(void *);
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	if (!s)
-		return ;
-	write(fd, s, ft_strlen(s));
-}
+# include "ft_array.h"
+# include "ft_istipe.h"
+# include "ft_memory.h"
+# include "ft_string.h"
+# include "ft_write.h"
+
+#endif

@@ -6,14 +6,14 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:11:16 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:46:27 by tatahere         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:03:49 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <aio.h>
 
 #include "ft_string.h"
-#include "is_tipe/ft_istipe.h"
+#include "ft_istipe.h"
 
 int	ft_atoi(const char *str)
 {

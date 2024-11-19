@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   libft_ext.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 10:48:17 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/13 14:04:10 by tatahere         ###   ########.fr       */
+/*   Created: 2024/11/02 17:30:37 by tatahere          #+#    #+#             */
+/*   Updated: 2024/11/18 16:13:35 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef LIBFT_EXT_H
+# ifndef LIBFT_EXT_H
 
-#include "ft_write.h"
-#include "ft_string.h"
+# include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	if (!s)
-		return ;
-	write(fd, s, ft_strlen(s));
-}
+# include "ft_list.h"
+# include "ft_btree.h"
+# include "ft_tree.h"
+# include "ft_htable.h"
+
+#endif
