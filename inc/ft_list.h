@@ -6,12 +6,12 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 16:19:43 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 16:33:55 by tatahere         ###   ########.fr       */
+/*   Updated: 2025/01/13 15:17:45 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LISTS_H
-# define FT_LISTS_H
+#ifndef FT_LIST_H
+# define FT_LIST_H
 
 typedef struct s_list
 {
