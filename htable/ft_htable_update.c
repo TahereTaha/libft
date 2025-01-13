@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 15:51:53 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/19 16:31:13 by tatahere         ###   ########.fr       */
+/*   Updated: 2025/01/13 15:23:50 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "ft_list.h"
 #include "ft_htable.h"
 
-int		ft_htable_update(t_htable_ctx *htable, t_key_data elem)
+int	ft_htable_update(t_htable_ctx *htable, t_key_data elem)
 {
 	size_t		hash;
 	t_list		*current_node;

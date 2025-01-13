@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:13:56 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/19 14:37:32 by tatahere         ###   ########.fr       */
+/*   Updated: 2025/01/13 15:22:37 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ typedef struct s_htable_ctx
 
 typedef struct s_key_data
 {
-	char *key;
-	char *data;
+	char	*key;
+	char	*data;
 }	t_key_data;
 
 t_htable_ctx	*ft_htablenew_ctx(size_t size);
