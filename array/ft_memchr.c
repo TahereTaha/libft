@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 08:17:35 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/02 15:47:04 by tatahere         ###   ########.fr       */
+/*   Updated: 2025/03/03 13:14:00 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (((unsigned char *)s)[i] == (unsigned char)c)
-			return ((void *)&s[i]);
+			return ((void *)&((char *)s)[i]);
 		i++;
 	}
 	return (0);
