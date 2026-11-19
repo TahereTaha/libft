@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:30:37 by tatahere          #+#    #+#             */
-/*   Updated: 2025/01/13 15:21:22 by tatahere         ###   ########.fr       */
+/*   Updated: 2026/11/19 18:12:57 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 # include "libft.h"
 
 # include "ft_list.h"
-# include "ft_btree.h"
-# include "ft_tree.h"
 # include "ft_htable.h"
 
 #endif

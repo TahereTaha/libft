@@ -6,7 +6,7 @@
 #    By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/07 07:58:21 by tatahere          #+#    #+#              #
-#    Updated: 2024/11/19 17:23:49 by tatahere         ###   ########.fr        #
+#    Updated: 2026/11/19 18:15:06 by tatahere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 AR			= ar rc
@@ -82,19 +82,6 @@ LIST		=	ft_lstnew.c			\
 
 SRC			+=	$(LIST)
 
-BTREE		=	ft_btreeclear.c		\
-				ft_btreedelone.c	\
-				ft_btreenew.c		\
-
-SRC			+=	$(BTREE)
-
-TREE		=	ft_treeclear.c		\
-				ft_treedelone.c		\
-				ft_treenew.c		\
-				ft_treeadd_child.c	\
-
-SRC			+=	$(TREE)
-
 HTABLE		=	ft_htablenew_ctx.c	\
 				ft_htabledel_ctx.c	\
 				ft_htable_hash.c	\
@@ -109,7 +96,7 @@ SRC			+=	$(HTABLE)
 DEP		= $(addprefix bin/, ${SRC:.c=.d})
 OBJ		= $(addprefix bin/, ${SRC:.c=.o})
 
-VPATH	=	array:is_tipe:memory:string:write:list:btree:tree:htable
+VPATH	=	array:is_tipe:memory:string:write:list:htable
 
 # build the library
 all: ./bin/ $(NAME) Makefile
