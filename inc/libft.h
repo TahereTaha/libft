@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 10:43:31 by tatahere          #+#    #+#             */
-/*   Updated: 2025/01/13 15:20:56 by tatahere         ###   ########.fr       */
+/*   Updated: 2026/11/19 20:50:04 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include "ft_memory.h"
 # include "ft_string.h"
 # include "ft_write.h"
+# include "ft_math.h"
 
 typedef void	(*t_del)(void *);
 #endif

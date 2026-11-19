@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 16:41:20 by tatahere          #+#    #+#             */
-/*   Updated: 2024/11/13 13:34:16 by tatahere         ###   ########.fr       */
+/*   Updated: 2026/11/19 20:41:51 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
+char	*ft_ltoa(long n);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *str);
