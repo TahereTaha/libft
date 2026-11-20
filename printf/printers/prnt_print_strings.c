@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 15:13:40 by tatahere          #+#    #+#             */
-/*   Updated: 2026/11/19 20:36:52 by tatahere         ###   ########.fr       */
+/*   Updated: 2026/11/20 16:29:33 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,7 @@ int	prnt_printf_s(t_func_writer f_write, va_list ptr, t_fmt_mrk *fmt_mrk)
 int	prnt_c_null(t_func_writer f_write, int width, int minus)
 {
 	char	*str;
-	int		return_val;
 
-	return_val = 0;
 	str = prnt_add_pading(ft_strdup(""), ' ', width - 1, 0);
 	if (minus && f_write('\0') == -1)
 		return (-1);
