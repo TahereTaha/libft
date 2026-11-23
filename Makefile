@@ -6,7 +6,7 @@
 #    By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/07 07:58:21 by tatahere          #+#    #+#              #
-#    Updated: 2026/11/19 20:55:27 by tatahere         ###   ########.fr        #
+#    Updated: 2026/11/23 19:49:42 by tatahere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 AR			= ar rc
@@ -99,6 +99,7 @@ HTABLE		=		ft_htablenew_ctx.c	\
 SRC			+=	$(HTABLE)
 
 PRINTF		=		ft_printf.c				\
+				ft_printfe.c				\
 				prnt_write.c				\
 				prnt_set_fmt_mrk.c			\
 				prnt_set_fmt_mrk_utils.c		\

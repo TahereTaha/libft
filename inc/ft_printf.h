@@ -6,7 +6,7 @@
 /*   By: tatahere <tatahere@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 13:30:55 by tatahere          #+#    #+#             */
-/*   Updated: 2024/07/22 15:03:12 by tatahere         ###   ########.fr       */
+/*   Updated: 2026/11/23 19:46:46 by tatahere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@
 # include <stdarg.h>
 
 int	ft_printf(char *fmt_str, ...);
+int	ft_printfe(char *fmt_str, ...);
 
 #endif
